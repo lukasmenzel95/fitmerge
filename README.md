@@ -20,7 +20,7 @@ A tool to merge multiple Wahoo/Garmin `.fit` files into a single, seamless GPX t
 
 ### 1. Clone & Setup
 ```bash
-git clone [https://github.com/YOUR_USERNAME/fitmerge.git](https://github.com/YOUR_USERNAME/fitmerge.git)
+git clone "this repo"
 cd fitmerge
 
 # Create Virtual Environment (Recommended)
@@ -34,3 +34,22 @@ source venv/bin/activate
 
 # Install Dependencies
 pip install -r requirements.txt
+```
+### 2. Add your data
+Place all your .fit files from your bike computer into the /input_files folder. (If the folder doesn't exist, run python merge_rides.py once to create it).
+
+### 3. Run
+Step A: Merge & Simplify This parses the binary files, sorts them chronologically, and creates a lightweight GPX.
+```bash
+python merge_rides.py
+```
+Step B: Visualize This generates an interactive HTML map with elevation profiles and stats.
+```bash
+python merge_rides.py
+```
+### 🛠 Configuration
+You can adjust these variables at the top of the scripts:
+
+SIMPLIFICATION_MARGIN: (merge_rides.py) Accuracy in meters. Higher = smaller file size.
+
+GAP_THRESHOLD_HOURS: (visualize_ride.py) Time gap required to trigger a new ride color.
