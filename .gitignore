@@ -1,0 +1,15 @@
+# Python debris
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Data Files (Keep your personal data off GitHub!)
+input_files/*.fit
+merged_ride.gpx
+ride_map.html
+
+# OS junk
+.DS_Store
+Thumbs.db

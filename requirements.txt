@@ -1,0 +1,7 @@
+pandas
+gpxpy
+fitdecode
+folium
+tqdm
+jinja2
+branca
