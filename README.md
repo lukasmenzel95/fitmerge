@@ -1,6 +1,8 @@
 # FitMerge: GPX & FIT File Combiner
 
-A tool to merge multiple Wahoo/Garmin `.fit` files into a single, seamless GPX track. It handles multi-day trips, visualizes data with an interactive map, and generates an elevation profiles.
+A tool to merge multiple Wahoo/Garmin `.fit` files into a single, seamless GPX track. It handles multi-day trips, visualizes data with an interactive map, and generates  elevation profiles.
+
+![Map Preview](preview.png)
 
 ## Features
 * **Smart Merging:** Concatenates hundreds of `.fit` files chronologically.
